@@ -1,41 +1,12 @@
-  <!DOCTYPE html>
+<!DOCTYPE html> 
+<html> 
+<body> 
 
-        <html>
-          <head>
-                <title>Litaecrypt</title>
-        <script> 
-        var      myVideo; 
+<video width="400" controls>
+  <source src="litaecrypt.mov" type="video/mov">
+  Your browser does not support HTML5 video.
+</video>
 
-        window.onload = function()
-        {
-            myVideo=      document.getElementById("myVideoFile"); 
-            btnfullMode.addEventListener("click",      setFullScreenMode, false); 
-            video.addEventListener("loadedmetadata", makeFullModeVisible,     false);
-        } 
 
-        function makeFullModeVisible()
-        {
-                if (video.webkitSupportsFullscreen)
-            {
-                    document.getElementById("btnfullMode").style.visibility="visible";
-            }
-        } 
-
-        function setFullScreenMode()
-        {
-                    video.webkitEnterFullscreen();
-        }
-        </script> 
-        </head>
-        <body> 
-          <div id="video_container"> 
-        <video width="320"     height="176"     src="litaecrypt.mov"     id="myVideoFile"     autoplay /> 
-
-        </div>
-                 <br/> 
-                 <button type="button" id="btnfullMode"    >
-                  Open Video in      Full Screen mode
-                 </button>
-        </body>
-    </html>
-
+</body> 
+</html>
