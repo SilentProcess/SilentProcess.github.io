@@ -1,7 +1,41 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h1>Github hosted web page</h1>
-  <p>Content goes here lmao</p>
-</body>
-</html>
+  <!DOCTYPE html>
+
+        <html>
+          <head>
+                <title>HTML5 Video Full Screen Mode Example</title>
+        <script> 
+        var      myVideo; 
+
+        window.onload = function()
+        {
+            myVideo=      document.getElementById("myVideoFile"); 
+            btnfullMode.addEventListener("click",      setFullScreenMode, false); 
+            video.addEventListener("loadedmetadata", makeFullModeVisible,     false);
+        } 
+
+        function makeFullModeVisible()
+        {
+                if (video.webkitSupportsFullscreen)
+            {
+                    document.getElementById("btnfullMode").style.visibility="visible";
+            }
+        } 
+
+        function setFullScreenMode()
+        {
+                    video.webkitEnterFullscreen();
+        }
+        </script> 
+        </head>
+        <body> 
+          <div id="video_container"> 
+        <video width="320"     height="176"     src="presentation_litaecrypt_and_bruteforce.flv"     id="myVideoFile"     autoplay /> 
+
+        </div>
+                 <br/> 
+                 <button type="button" id="btnfullMode"    >
+                  Open Video in      Full Screen mode
+                 </button>
+        </body>
+    </html>
+
